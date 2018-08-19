@@ -16,7 +16,7 @@ public class FilePreparatorIT {
 
     @Test
     public void testFilePreparatorOutputFiles() throws IOException {
-        FilePreparator.prepareFiles("resources/wordlist.txt", "src/test/resources/filepreparator");
+        FilePreparator.prepareFiles("src/main/resources/wordlist.txt", "src/test/resources/filepreparator");
         File f = new File("src/test/resources/filepreparator/words-len-3.txt");
         checkFileWordsLength(f);
     }

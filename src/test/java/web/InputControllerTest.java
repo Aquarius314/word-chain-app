@@ -12,7 +12,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes=InputController.class)
+@SpringBootTest
 @AutoConfigureMockMvc
 public class InputControllerTest {
 
@@ -21,7 +21,7 @@ public class InputControllerTest {
 
     @Test
     public void testInputControllerResponseStatus() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/word1/word2"))
+        mvc.perform(MockMvcRequestBuilders.get("/cat/dog"))
                 .andExpect(status().isOk());
     }
 
