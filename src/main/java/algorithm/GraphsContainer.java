@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class GraphsContainer {
 
-    Map<Integer, HashMap<String, Set<String>>> mapOfGraphs = new HashMap<>();
+    private Map<Integer, HashMap<String, Set<String>>> mapOfGraphs = new HashMap<>();
 
     public void addWord(String word) {
         int len = word.length();
