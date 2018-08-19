@@ -16,12 +16,13 @@ public class AlgoUtilsTest {
         assertTrue(AlgoUtils.canBeNeighbours(neighbour2, neighbour1));
         assertTrue(AlgoUtils.canBeNeighbours(neighbour2, neighbour3));
         assertFalse(AlgoUtils.canBeNeighbours(neighbour1, neighbour3));
+        assertFalse(AlgoUtils.canBeNeighbours(neighbour1, neighbour1));
     }
 
     @Test
     public void testScoreMethod() {
         String word =   "abcde";
-        String target = "aabbe";
-        assertTrue(AlgoUtils.score(word, target) == 2);
+        String target = "abbbb";
+        assertTrue(AlgoUtils.score(word, target) == 3);
     }
 }
