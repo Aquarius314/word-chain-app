@@ -1,6 +1,6 @@
 # Word Chain Application
 
-* The application is solving problem from http://codekata.com/kata/kata19-word-chains/ using 338k-words long english dictionary.
+The application is solving problem from http://codekata.com/kata/kata19-word-chains/ using 338k-words long english dictionary.
 
 To get nice performance, the application is reading the dictionary, then separates it into smaller dictionaries containing only same-length words (e.g. words-len-3.txt contain only 3-letters long words etc).
 
