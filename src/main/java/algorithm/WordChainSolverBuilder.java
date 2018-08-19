@@ -17,7 +17,7 @@ public class WordChainSolverBuilder {
         while ((readLine = b.readLine()) != null) {
             graphsContainer.addWord(readLine.toLowerCase());
         }
-        System.out.println("Finished reading dictionary");
+        System.out.println("Finished reading dictionary: " + wordListFile.getName());
 
         return new WordChainSolver(graphsContainer);
     }
