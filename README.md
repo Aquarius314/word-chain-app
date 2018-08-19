@@ -14,3 +14,5 @@ __HOWEVER__ the implementation that I provided is simplified:
 * It stops after 100 iterations (when probably no solution was available), number of max iterations can be increased as well.
 
 To run the application, simply run the WordChainApp class. Then, go to localhost:8080/{firstWord}/{secondWord} and receive the results.
+
+The solution is fully created by __Jakub Adrian Wójcik__, owner of this repository.
