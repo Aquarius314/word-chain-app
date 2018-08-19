@@ -16,8 +16,8 @@ public class FilePreparatorIT {
 
     @Test
     public void testFilePreparatorOutputFiles() throws IOException {
-        FilePreparator.prepareFiles("resources/wordlist.txt", "src/test/resources");
-        File f = new File("src/test/resources/words-len-3.txt");
+        FilePreparator.prepareFiles("resources/wordlist.txt", "src/test/resources/filepreparator");
+        File f = new File("src/test/resources/filepreparator/words-len-3.txt");
         checkFileWordsLength(f);
     }
 
@@ -36,7 +36,7 @@ public class FilePreparatorIT {
 
     @After
     public void cleanCreatedFiles() throws IOException {
-        FileUtils.cleanDirectory(new File("src/test/resources"));
+        FileUtils.cleanDirectory(new File("src/test/resources/filepreparator"));
     }
 
 }
